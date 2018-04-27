@@ -11,7 +11,8 @@
 			<td>username</td>
 			<td>password</td>
 			<td>fullname</td>
-			<td>levels</td>
+			<td>email</td>
+			<td>Pekerjaan</td>
 			<td>Masukkan Id yg Akan Dihapus<form action="http://localhost/trepel/index.php/Cilin/delete" method="post">
 						<input type="text" name="id">
 						<input type="submit" name="submit" value="kirim">
