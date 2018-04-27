@@ -29,7 +29,9 @@
 					<td><?php echo $key->username ?></td>
 					<td><?php echo $key->password ?></td>
 					<td><?php echo $key->fullname ?></td>
-					<td><?php echo $key->level ?></td>
+					<td><?php echo $key->email ?></td>
+					<td><?php echo $key->pekerjaan ?></td>
+					<td><?php echo $key->deskripsi ?></td>
 					<td><a href="http://localhost/trepel/index.php/Cilin/delete/<?php echo $key->id ?>">Delete</td>
 					<td><a href="http://localhost/trepel/index.php/Cilin/update/<?php echo $key->id ?>">Update</td>
 				</tr>
