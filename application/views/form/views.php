@@ -8,11 +8,12 @@
 	<table border="1">
 		<tr><!--td ke ssamping tr kebawah-->
 			<td>id</td>
-			<td>username</td>
-			<td>password</td>
-			<td>fullname</td>
-			<td>email</td>
+			<td>Fullname</td>
+			<td>Username</td>
+			<td>e-mail</td>
+			<td>Password</td>
 			<td>Pekerjaan</td>
+			<td>Deskripsi</td>
 			<td>Masukkan Id yg Akan Dihapus<form action="http://localhost/trepel/index.php/Cilin/delete" method="post">
 						<input type="text" name="id">
 						<input type="submit" name="submit" value="kirim">
@@ -27,10 +28,10 @@
 				<tr>
 
 					<td><?php echo $key->id ?></td>
-					<td><?php echo $key->username ?></td>
-					<td><?php echo $key->password ?></td>
 					<td><?php echo $key->fullname ?></td>
+					<td><?php echo $key->username ?></td>
 					<td><?php echo $key->email ?></td>
+					<td><?php echo $key->password ?></td>
 					<td><?php echo $key->pekerjaan ?></td>
 					<td><?php echo $key->deskripsi ?></td>
 					<td><a href="http://localhost/trepel/index.php/Cilin/delete/<?php echo $key->id ?>">Delete</td>
