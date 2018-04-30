@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>Daftar</title>
 	<style>
 	<style>@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
@@ -305,7 +305,7 @@ html{
         <form class="form-basic" method="post" action="http://localhost/trepel/index.php/Cilin/masukkan">
 
             <div class="form-title-row">
-                <h1>Form</h1>
+                <h1>Daftar</h1>
             </div>
 
             <div class="form-row">
@@ -343,24 +343,16 @@ html{
 
             <div class="form-row">
                 <label>
-                    <span>Pekerjaan</span>
-                    <select name="pekerjaan">
-                        <option>PNS</option>
-                        <option>Pelajar</option>
-                        <option>Wira swasta</option>
-                        <option>Pengusaha</option>
+                    <span>Level</span>
+                    <select name="level">
+                        <option>Developer</option>
+                        <option>Manager</option>
+                        <option>User</option>
                     </select>
                 </label>
             </div>
 
-            <div class="form-row">
-                <label>
-                    <span>Deskripsikan Tentang Anda</span>
-                    <textarea name="deskripsi"></textarea>
-                </label>
-            </div>
-                
-					<input type="submit" value="save">
+            <button class="btn btn-outline-primary" type="submit" value="Submit">Daftar</button>
                 </div>
             </div>
 

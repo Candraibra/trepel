@@ -23,7 +23,7 @@ class Cilin extends CI_Controller {
     public function masukkan()
     {
       # code...
-      $input = array('username' => $this->input->post('username'),'password' => $this->input->post('password'),'fullname' => $this->input->post('fullname'),'email' => $this->input->post('email'),'pekerjaan' => $this->input->post('pekerjaan'),'deskripsi' => $this->input->post('deskripsi'));
+      $input = array('username' => $this->input->post('username'),'password' => $this->input->post('password'),'fullname' => $this->input->post('fullname'),'email' => $this->input->post('email'),'level' => $this->input->post('level'));
   
       $insert=$this->db->insert('user' , $input );//
   
@@ -54,7 +54,7 @@ class Cilin extends CI_Controller {
     public function gantikan( $id = '')
     {
       # code...
-      $input = array('username' => $this->input->post('username'),'password' => $this->input->post('password'),'fullname' => $this->input->post('fullname'),'level' => $this->input->post('level'));
+     $input = array('username' => $this->input->post('username'),'password' => $this->input->post('password'),'fullname' => $this->input->post('fullname'),'email' => $this->input->post('email'),'level' => $this->input->post('level'));
       $this->db->where('id',$id);
       $insert=$this->db->update('user' , $input );//
   
