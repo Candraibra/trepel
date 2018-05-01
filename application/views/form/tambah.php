@@ -301,7 +301,6 @@ html{
 
 	    <div class="main-content">
 
-
         <form class="form-basic" method="post" action="http://localhost/trepel/index.php/Cilin/masukkan">
 
             <div class="form-title-row">
