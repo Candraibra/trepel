@@ -4,7 +4,7 @@
 	<title></title>
 </head>
 <body>
-	<?php foreach ($isi->result() as $key): ?>
+	<?php foreach ($isi->result() as $key) : ?>
 		<form action="http://localhost/trepel/index.php/Cilin/gantikan/<?php echo $key->id ?>" method="post">
 			<input type="text" name="fullname" placeholder="fullname">
 			<input type="text" name="username" placeholder="username">

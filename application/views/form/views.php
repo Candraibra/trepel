@@ -58,7 +58,7 @@
 						<th><input type="text" class="form-control" placeholder="option" disabled></th>
                     </tr>
                 </thead>
-				<?php foreach ($isi->result() as $key ): ?><!--variabel isi dihasilkan kemudian ditampung di $key foreach digunakan apabila ada data di dalam database maka akan di tampilkan / akan ngloop ampai data ditampilkan semua-->
+				<?php foreach ($isi->result() as $key) : ?><!--variabel isi dihasilkan kemudian ditampung di $key foreach digunakan apabila ada data di dalam database maka akan di tampilkan / akan ngloop ampai data ditampilkan semua-->
 		<tbody>
 				<tr>
 					<td><?php echo $key->id ?></td>
@@ -66,7 +66,7 @@
 					<td><?php echo $key->username ?></td>
 					<td><?php echo $key->email ?></td>
 					<td><?php echo $key->password ?></td>
-					<td><?php echo $key->level?></td>
+					<td><?php echo $key->level ?></td>
 					<td><a href="http://localhost/trepel/index.php/Cilin/delete/<?php echo $key->id ?>">Delete      <a href="http://localhost/trepel/index.php/Cilin/update/<?php echo $key->id ?>">|  Update</td>
 					<!-- <td><a href="http://localhost/trepel/index.php/Cilin/update/<?php echo $key->id ?>">Update</td> -->
 				</tr>
