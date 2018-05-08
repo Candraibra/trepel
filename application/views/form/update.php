@@ -12,10 +12,8 @@
 			<input type="text" name="password" placeholder="password">
 			<input type="text" name="level" placeholder="level">
 			<input type="submit" value="save">
-
 		</form>
-	<?php endforeach ?>
-	
+	<?php endforeach ?>	
 </body>
 </html>
 

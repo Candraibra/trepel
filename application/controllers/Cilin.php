@@ -6,7 +6,7 @@ class Cilin extends CI_Controller
   {
     parent::__construct();
 		//Load Dependencies
- 
+  
   }
   public function index()
   {
@@ -31,7 +31,7 @@ class Cilin extends CI_Controller
     if ($insert) {
 
 
-      echo "sukses";
+      redirect('Cilin');
 
     } else {
 
@@ -62,7 +62,7 @@ class Cilin extends CI_Controller
     if ($insert) {
 
 
-      echo "sukses";
+      redirect('Cilin');
 
     } else {
 
