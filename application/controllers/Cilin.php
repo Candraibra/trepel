@@ -39,26 +39,7 @@ class Cilin extends CI_Controller
 
   }
 
-  public function gantikan($id = '')
-  {
-      # code...
-    $input = array('username' => $this->input->post('username'), 'password' => $this->input->post('password'), 'fullname' => $this->input->post('fullname'), 'email' => $this->input->post('email'), 'level' => $this->input->post('level'));
-    $this->db->where('id', $id);
-    $insert = $this->db->update('user', $input);//
 
-    if ($insert) {
-
-
-      redirect('Cilin');
-
-    } else {
-
-      echo "gagal";
-
-    }
-
-  }
-  
     //Delete one item
   public function delete($id = '')
   {
