@@ -6,7 +6,7 @@ class Cilin extends CI_Controller
   {
     parent::__construct();
 		//Load Dependencies
-  
+    $this->load->model('model');
   }
   public function index()
   {
@@ -25,19 +25,8 @@ class Cilin extends CI_Controller
   {
       # code...
     $input = array('username' => $this->input->post('username'), 'password' => $this->input->post('password'), 'fullname' => $this->input->post('fullname'), 'email' => $this->input->post('email'), 'level' => $this->input->post('level'));
-
-    $insert = $this->db->insert('user', $input);//
-
-    if ($insert) {
-
-
-      redirect('Cilin');
-
-    } else {
-
-      echo "gagal";
-
-    }
+    $this->model->input($input);
+    redirect('Cilin');
   }
     //Update one item
   public function update($id = '')
@@ -46,9 +35,7 @@ class Cilin extends CI_Controller
         # code...
     $this->db->where('id', $id);
 
-    $data['isi'] = $this->db->get('user');
-
-    $this->load->view('form/update', $data);
+    $this->model->update($id);
 
   }
 

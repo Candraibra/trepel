@@ -29,7 +29,7 @@
     color: #333;
 }
 </style>
-  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 </head>
@@ -66,9 +66,8 @@
 					<td><?php echo $key->username ?></td>
 					<td><?php echo $key->email ?></td>
 					<td><?php echo $key->password ?></td>
-					<td><?php echo $key->level ?></td>
-					<td><a href="http://localhost/trepel/index.php/Cilin/delete/<?php echo $key->id ?>">Delete      <a href="http://localhost/trepel/index.php/Cilin/update/<?php echo $key->id ?>">|  Update</td>
-					<!-- <td><a href="http://localhost/trepel/index.php/Cilin/update/<?php echo $key->id ?>">Update</td> -->
+					<td> <?php echo $key->level ?></td>
+					<td><a href="http://localhost/trepel/index.php/Cilin/delete/<?php echo $key->id ?>">Delete<a href="http://localhost/trepel/index.php/Cilin/update/<?php echo $key->id ?>">  |  Update</td>
 				</tr>
 				</tbody>
 		<?php endforeach ?>

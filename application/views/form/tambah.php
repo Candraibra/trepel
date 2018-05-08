@@ -294,10 +294,6 @@ html{
 	</style>
 </head>
 <body>
-<header>
-		<h1>Trepel</h1>
-     
-    </header>
 
 	    <div class="main-content">
 
