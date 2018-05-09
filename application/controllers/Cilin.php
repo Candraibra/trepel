@@ -39,7 +39,6 @@ class Cilin extends CI_Controller
 
   }
 
-
     //Delete one item
   public function delete($id = '')
   {
