@@ -39,8 +39,7 @@ class Login extends CI_Controller {
  
 		}else
 		{
-			$this->load->view('form/login');
-            $message = "Either the email or password (or both) are incorrect. Make sure that you've typed them correctly and try again";
+            $message = "Either the email or password (or both) are incorrect.";
 			echo "<script type='text/javascript'>alert('$message');</script>";
 			redirect('Login','refresh');
 		}
