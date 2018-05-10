@@ -296,7 +296,7 @@ html{
 	<?php foreach ($isi->result() as $key) : ?>
 			<div class="main-content">
 
-<form class="form-basic" method="post"action="http://localhost/trepel/index.php/Cilin/gantikan/<?php echo $key->id ?>">
+<form class="form-basic" method="post"action="http://localhost/trepel/index.php/Cilin/prosesupdate/<?php echo $key->id ?>">
 
 	<div class="form-title-row">
 		<h1>Update</h1>

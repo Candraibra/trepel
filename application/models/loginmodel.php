@@ -1,10 +1,11 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') or exit('No direct script access allowed');
 
-class Loginmodel extends CI_Model {
+class Loginmodel extends CI_Model
+{
 
-	function cek_login($table,$where)
-	{		
-		return $this->db->get_where($table,$where);
-	}
+    public function cek_login($table, $where)
+    {
+        return $this->db->get_where($table, $where);
+    }
 }

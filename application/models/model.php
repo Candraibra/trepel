@@ -3,7 +3,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 /**
  * User_model class.
- * 
+ *
  * @extends CI_Model
  */
 class Model extends CI_Model
@@ -11,7 +11,7 @@ class Model extends CI_Model
 
     /**
      * __construct function.
-     * 
+     *
      * @access public
      * @return void
      */
@@ -24,11 +24,16 @@ class Model extends CI_Model
     }
     public function input($input)
     {
-        $insert = $this->db->insert('user', $input);//
+        $insert = $this->db->insert('user', $input); //
     }
     public function update($input)
     {
         $data['isi'] = $this->db->get('user');
         $this->load->view('form/update', $data);
+    }
+    public function prosesupdate($input,$id)
+    {
+       $this->db->where("id",$id);
+       $insert =$this->db->update("user",$input);
     }
 }
